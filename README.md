@@ -1,23 +1,91 @@
-# Heart-Disease-Prediction-using-Machine-Learning
-Thus preventing Heart diseases has become more than necessary. Good data-driven systems for predicting heart diseases can improve the entire research and prevention process, making sure that more people can live healthy lives. This is where Machine Learning comes into play. Machine Learning helps in predicting the Heart diseases, and the predictions made are quite accurate.
+# Heart Disease Prediction using Machine Learning 🫀🤖
 
-The project involved analysis of the heart disease patient dataset with proper data processing. Then, different models were trained and and predictions are made with different algorithms KNN, Decision Tree, Random Forest,SVM,Logistic Regression etc
-This is the jupyter notebook code and dataset I've used for my Kaggle kernel 'Binary Classification with Sklearn and Keras'
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
+[![Kaggle Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/ronitf/heart-disease-uci)
 
-I've used a variety of Machine Learning algorithms, implemented in Python, to predict the presence of heart disease in a patient. This is a classification problem, with input features as a variety of parameters, and the target variable as a binary variable, predicting whether heart disease is present or not.
+## 🔍 Overview
 
-Machine Learning algorithms used:
+Heart disease is one of the leading causes of death globally. Early prediction and diagnosis are crucial for effective treatment and prevention. This project leverages **Machine Learning algorithms** to predict the presence of heart disease in patients based on a range of medical attributes.
 
-1. Logistic Regression (Scikit-learn)
-2. Naive Bayes (Scikit-learn)
-3. Support Vector Machine (Linear) (Scikit-learn)
-4. K-Nearest Neighbours (Scikit-learn)
-5. Decision Tree (Scikit-learn)
-6. Random Forest (Scikit-learn)
-7. XGBoost (Scikit-learn)
-8. Artificial Neural Network with 1 Hidden layer (Keras)
+The main goal of this project is to build reliable and accurate predictive models that can assist healthcare professionals in identifying high-risk individuals and ensuring timely intervention.
 
-Accuracy achieved: 95% (Random Forest)
+## 📊 Dataset
 
-Dataset used: https://www.kaggle.com/ronitf/heart-disease-uci
+- **Source**: [Kaggle - Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci)
+- **Type**: Classification (Binary)
+- **Target Variable**: `target` (1 = presence of heart disease, 0 = absence)
+- **Features**: Age, Sex, Chest pain type, Resting BP, Cholesterol, Fasting Blood Sugar, etc.
 
+## ⚙️ Machine Learning Models Used
+
+The following algorithms were trained and evaluated on the dataset:
+
+1. **Logistic Regression** (Scikit-learn)
+2. **Naive Bayes** (Scikit-learn)
+3. **Support Vector Machine (SVM)** - Linear kernel (Scikit-learn)
+4. **K-Nearest Neighbours (KNN)** (Scikit-learn)
+5. **Decision Tree** (Scikit-learn)
+6. **Random Forest** (Scikit-learn)
+7. **XGBoost** (XGBoost library)
+8. **Artificial Neural Network (ANN)** - 1 Hidden Layer (Keras)
+
+### ✅ Best Accuracy Achieved: **95%** (Random Forest)
+
+## 📌 Features of the Project
+
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature selection and scaling
+- Comparison of multiple ML algorithms
+- Hyperparameter tuning
+- Neural Network implementation with Keras
+- Model evaluation metrics (Accuracy, Confusion Matrix, etc.)
+
+## 🧪 How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/abhi-tiwari-01/HeartDisease.git
+   cd HeartDisease
+   ```
+
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Run the app:
+    ```bash
+    streamlit run app.py
+    ```
+4. Open your web browser and navigate to `http://localhost:8501` to view the app.
+
+## 📁 Project Structure
+```plaintext
+    HeartDisease
+    ├── app.py
+    ├── heart_disease_model.pkl
+    ├── Heart_Disease_Prediction.ipynb   
+    ├── heart.csv                       
+    ├── README.md                 
+    └── requirements.txt               
+```
+## 🧠 Future Enhancements
+- Deploy the model as a web application using Flask or Streamlit
+
+- Add more features or newer datasets for better generalization
+
+- Perform cross-validation and deeper hyperparameter tuning
+
+- Add feature importance analysis
+
+## 🤝 Contributions
+Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🔗 Useful Links
+[![Kaggle Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/ronitf/heart-disease-uci)
+
+[![GitHub Repo](https://img.shields.io/badge/Repo-GitHub-black?logo=github)](https://github.com/abhi-tiwari-01/HeartDisease)
